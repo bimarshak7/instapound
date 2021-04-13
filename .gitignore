@@ -1,0 +1,7 @@
+**/node_modules
+*.log
+static/uploads/dp/*
+static/uploads/posts/*
+!static/uploads/dp/default.png
+*.db
+__pycache__/

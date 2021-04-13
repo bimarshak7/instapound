@@ -1,0 +1,38 @@
+.container{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+
+}
+body{
+    background-color: black;
+    color: white;
+}
+.navbar-dark .navbar-text {
+    color: rgb(255, 255, 255);
+}
+
+.mt-5{
+    background-color: #123;
+    color:white;
+    border-radius: 10px;
+}
+.login{
+    margin-top:auto;
+}
+.form-control, .form-control:focus{
+    border-radius:7px;
+    color: white;
+    background-color: #1e1e1e;
+}
+
+.upload{
+    height: 2.7em;
+    display: none;
+}
+
+@media only screen and (max-width: 720px) {
+  .container {
+      margin-top: 10%;
+  }
+}

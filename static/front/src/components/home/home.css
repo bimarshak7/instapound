@@ -1,0 +1,279 @@
+.badge{
+    padding: 0em 0.4em;
+    margin-top: 0em;
+    font-size: 1.7em;
+}
+.card{
+    min-width:60%;
+}
+
+.card-footer i{
+    cursor:pointer;
+    font-size: 2em;
+    padding: 0%;
+}
+.card-footer{
+    padding: 0.2rem .25rem;
+}
+.open-form{
+    cursor: pointer;
+    height:5.7rem;
+    border: 3px solid rgb(9, 97, 220);
+    background: #123;
+    border-radius: 16px;
+}
+
+.modal-content{
+    background-color: black;
+    color: white;
+}
+
+.qn{
+    font-size: 2.2vw;
+    padding: 0.5rem 0.5rem;
+    margin: 0.5em 7.5vw;
+    background-color: #ceb0b029;
+    width: 70%;
+    border-radius:3rem;
+}
+.new-button {
+    display: inline-block;
+    padding: 8px 12px; 
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #0c3e8c;
+    font-size: 16px;
+    color: #fff;
+    width:100%;
+    text-align: center;
+    margin-top: 1.5em;
+}
+.post-form input[type="file"] {
+  position: absolute;
+  z-index: -1;
+  top: 6px;
+  left: 0;
+  font-size: 15px;
+  color: rgb(153,153,153);
+}
+
+.clear-pic{
+    position: absolute;
+    background: black;
+    margin: 0.4em -2em;
+    color:white;
+    border-radius: 50%;
+    border:none;
+}
+
+.col-md-5{
+    flex: 0 0 100%;
+    max-width:100%;
+}
+
+.stretch-card>.card {
+    width: 100%;
+    min-width: 100%
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-color: rgba(61, 48, 48, 0.103);
+    background-clip: border-box;
+    border: 1px solid #d2d2dc;
+    border-radius: 12px;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #3da5f4;
+    border-color: #3da5f4
+}
+
+.btn {
+    font-size: 0.875rem;
+    line-height: 1;
+    font-weight: 400;
+    padding: .7rem 1.5rem;
+    border-radius: 0.1275rem
+}
+
+h6 {
+    font-size: .9375rem
+}
+
+.mt-2, mt-3, mb-4{
+    margin:0 !important;
+}
+.card-body h4{
+    margin-bottom: 0;
+}
+.img-lg{
+    height:125px;
+    width: 125px;
+}
+.pt-3{
+    margin-bottom: 1em;
+}
+
+.ellipsis {
+    color: #a09c9c
+}
+
+hr {
+    color: #ffffff;
+    margin-top: 4px;
+    margin-bottom: 8px
+}
+.post-card{
+    width:45vw;
+    margin: .7em 2em .7em 0em;
+}
+
+
+.ellipsis i {
+    margin-top: 3px;
+    cursor: pointer
+}
+
+.icons i {
+    font-size: 25px
+}
+
+.icons .fa-heart {
+    color: red
+}
+
+.icons .fa-smile-o {
+    color: yellow;
+    font-size: 29px
+}
+
+.rounded-image {
+    border-radius: 50% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px
+}
+
+.name {
+    font-weight: 600
+}
+
+.comment-text {
+    font-size: 12px
+}
+
+.status small {
+    margin-right: 10px;
+    color: blue
+}
+
+.form-control {
+    border-radius: 16px;
+    border:none;
+}
+textarea{
+    resize: none;
+}
+.comment-input {
+    position: relative
+}
+
+.fonts {
+    position: absolute;
+    right: 13px;
+    top: 8px;
+    color: #a09c9c
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #8bbafe;
+    outline: 0;
+    box-shadow: none
+}
+
+.post-img{
+    height:auto;
+    width: 90%;
+    margin:.3rem 1.5rem;
+}
+
+.dp-form{
+    height: 50px;
+    position: absolute;
+    width: 50px;
+    border-radius: 50%;
+    margin: 1em;
+}
+.dp-sm{
+    height: 50px;
+    width: 50px;
+}
+
+.col-auto{
+    padding: 2vh 2vw;
+}
+.change-dp{
+    background: rgba(75, 75, 94, 0.7);
+    margin: 8rem -9.3rem;
+    position: absolute;
+    width: 150px;
+    cursor: pointer;
+}
+.change-psw{
+    margin: 12rem -8.3rem;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+}
+.col-form-label,col-sm-10{
+    padding: .5em 0;
+    font-size: 0.8rem;
+}
+.dropdown-menu, .dropdown-item {
+    color: white;
+    background: black;
+    border-radius:12px;
+}
+.dropdown-item:hover{
+    color: white;
+    background: #123;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+.status small{
+    color:white
+}
+@media only screen and (min-width: 768px) {
+    .justify-content-md-center{
+    margin-left: 57%;
+    }
+  
+}
+
+.edit-modal{
+    position: fixed;
+    z-index: 2;
+    height: 100%;
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(4, 0, 128, 0.641);
+}
+.edit-content{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #123;
+  transform: translate(-50%, -50%);
+}
