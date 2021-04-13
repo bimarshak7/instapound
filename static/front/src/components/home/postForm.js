@@ -23,7 +23,7 @@ const PostForm = () => {
     const onChange = (e) => {
         if (e.target.name === 'file') {
             let file = e.target.files[0]
-            setPost(prev => ({ ...prev, preview: URL.createObjectURL(file), file: e.target.files[0] }));
+            setPost(prev => ({ ...prev, preview: URL.createObjectURL(file), file: file }));
         }
         else {
             let field_name = e.target.name;

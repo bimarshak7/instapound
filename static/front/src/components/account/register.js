@@ -12,12 +12,14 @@ const Register = () => {
 		email: '',
 		password1: '',
 		password2: '',
-		file: null
+		file: null,
+		preview: ''
 	})
 
 	const onChange = (e) => {
 		if (e.target.name === 'file') {
-			state['file'] = e.target.files[0]
+			let file = e.target.files[0]
+			setState(prev => ({ ...prev, preview: URL.createObjectURL(file), file: e.target.files[0] }));
 		}
 		else {
 			let field_name = e.target.name;
@@ -25,6 +27,7 @@ const Register = () => {
 			setState(prev => ({ ...prev, [field_name]: field_value }));
 		}
 	}
+	const clearPic = () => setState({ ...post, preview: '', file: null });
 	const dispatch = useDispatch();
 	const onSubmit = (e) => {
 		e.preventDefault()
@@ -117,14 +120,17 @@ const Register = () => {
 						</div>
 					</div>
 					<div className="form-group">
-						<label>Upload Profile Picture</label>
+						<label className='new-button' htmlFor='upload'> Chose a DP</label>
 						<input
+							id='upload'
 							type="file"
 							accept="image/*"
 							className="form-control upload"
 							name="file"
 							onChange={onChange}
 						/>
+						{state.preview != '' ? <div> <img src={state.preview} height='30%' width='30%' />
+							<button onClick={clearPic} type="button" className="clear-pic">X</button></div> : ''}
 					</div>
 					<div className="form-group">
 						<button type="submit" className="btn btn-primary">
