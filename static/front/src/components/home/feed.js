@@ -63,7 +63,7 @@ const Feed = (props) => {
                                     : ''}
                             </div>
                         </div>
-                        {posts[key].image ? <Link to={'/post/' + posts[key].id}><img className="post-img img-fluid" src={'http://127.0.0.1:5000/static/uploads/posts/' + posts[key].image} /></Link> : ''}
+                        {posts[key].image ? <Link to={'/post/' + posts[key].id}><img className="post-img img-fluid" src={'/static/uploads/posts/' + posts[key].image} /></Link> : ''}
                         <div className="p-2">
                             <p className="text-justify">{posts[key].caption}</p>
                             <hr />
