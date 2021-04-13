@@ -3,5 +3,6 @@
 static/uploads/dp/*
 static/uploads/posts/*
 !static/uploads/dp/default.png
+!static/uploads/posts/keep_alive
 *.db
 __pycache__/
