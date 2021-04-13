@@ -24,7 +24,7 @@ def token_required(func):
 			return jsonify({'msg':'Token missing!'}),401
 		#print('Token is ',token)
 		try:
-			data = jwt.decode(token, key='secret',algorithms='HS256')
+			data = jwt.decode(token, key=app.config['SECRET_KEY'],algorithms='HS256')
 			#print(data)
 			current_user = User.query.filter_by(public_id=data['public_id']).first()
 		except:
@@ -91,7 +91,7 @@ def delete_user(current_user):
 def login():
 	auth = request.authorization
 	#print('Auth header: ',auth)
-	key = 'secret'
+	key = app.config['SECRET_KEY']
 	alg = 'HS256'
 	if not auth or not auth.username or not auth.password:
 		return make_response('Could not verify',401,{'Www-Authenticate':'Basic realm="Login required!"'})
