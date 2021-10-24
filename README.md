@@ -47,4 +47,3 @@ The app will be live on ```127.0.0.1:5000/```
 ```python app.py```   
 The app will be live on ```127.0.0.1:5000/```   
 6. To rebuild frontend, use ```npm run dev```from ```static/front``` folder after making any changes in frontend.
->>>>>>> 39dee82e8201c003123c6239bfe0a7ee7dfa503e
