@@ -7,7 +7,7 @@ class User(db.Model):
 	username = db.Column(db.String(50),unique=True,nullable=False)
 	first_name = db.Column(db.String(50))
 	last_name = db.Column(db.String(50))
-	password = db.Column(db.String(77))
+	password = db.Column(db.String(90))
 	email = db.Column(db.String(50),unique=True)
 	dp = db.Column(db.String(100),default='cab_view.png')
 	bio = db.Column(db.String(100),default='')
