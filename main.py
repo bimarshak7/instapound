@@ -7,5 +7,5 @@ app.config['SECRET_KEY'] = os.environ['secret_KEY']
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
 
 DATABASE_URL = os.environ['DATABASE_URL']
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres@localhost:5432/instapound"
+app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
 db=SQLAlchemy(app)
