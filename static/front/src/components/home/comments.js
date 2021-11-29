@@ -9,12 +9,12 @@ const Comments = (props) => {
     const [text, setText] = useState('')
     const own = useSelector(state => state.auth.username)
     const onChange = e => {
-        setText(e.target.value.trim())
+        setText(e.target.value)
     }
     const dispatch = useDispatch()
     const onSubmit = () => {
         if (text != '') {
-            dispatch(postComment(props.id, text, props.index))
+            dispatch(postComment(props.id, text.trim(), props.index))
             setText('')
         }
     }
