@@ -109,7 +109,6 @@ def get_posts(current_user):
 			comment ={'id':qr.public_id,'text':qr.text,'time':qr.time,'name':cmtr.first_name+' '+cmtr.last_name,'dp':cmtr.dp,'owner':cmtr.username,'likes':c_likes,'own_like':c_ol}
 			comment={'0':comment}
 		posts[i]={'id':post.public_id,'owner':user.username,'name':user.first_name+' '+user.last_name,'dp':dp,'caption':post.caption,'image':img,'time':post.time,'own_like':own_like,'likes':likes,'comments':comments,'comment':comment}
-	print(posts[0]['time'])
 
 	return jsonify(posts)
 
